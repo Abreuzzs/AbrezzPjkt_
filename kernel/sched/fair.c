@@ -10970,11 +10970,13 @@ static inline int on_null_domain(struct rq *rq)
 
 #ifdef CONFIG_NO_HZ_COMMON
 /*
- * idle load balancing details
- * - When one of the busy CPUs notice that there may be an idle rebalancing
+ * NOHZ idle load balancing (ILB) details:
+ *
+ * - When one of the busy CPUs notices that there may be an idle rebalancing
  *   needed, they will kick the idle load balancer, which then does idle
  *   load balancing for all the idle CPUs.
- * - HK_FLAG_MISC CPUs are used for this task, because HK_FLAG_SCHED not set
+ *
+ * - HK_FLAG_MISC CPUs are used for this task, because HK_FLAG_SCHED is not set
  *   anywhere yet.
  */
 
