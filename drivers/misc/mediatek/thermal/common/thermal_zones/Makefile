@@ -233,7 +233,7 @@ ifneq ($(CONFIG_MTK_COMBO_WIFI),)
 endif
 
 obj-$(CONFIG_THERMAL) += mtk_tsAll.o
-obj-$(CONFIG_THERMAL) += mtk_ts_imgsensor.o
+#obj-$(CONFIG_THERMAL) += mtk_ts_imgsensor.o
 obj-$(CONFIG_THERMAL) += mtk_ts_dctm.o
 obj-$(CONFIG_THERMAL) += mtk_ts_pmic.o
 
