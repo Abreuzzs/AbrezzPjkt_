@@ -41,7 +41,6 @@ static int mtk_menu_fb_notifier_callback(struct notifier_block *self,
 {
 	struct fb_event *evdata = data;
 	int blank;
-	unsigned long flags = 0;
 
 	if (event != FB_EVENT_BLANK)
 		return 0;
@@ -69,7 +68,6 @@ static struct notifier_block mtk_menu_fb_notifier = {
 static bool is_screen_on(void)
 {
 	bool result = false;
-	unsigned long flags = 0;
 	result = screen_on;
 	return result;
 }
@@ -698,7 +696,6 @@ static struct cpuidle_governor menu_governor = {
  */
 static int __init init_menu(void)
 {
-	unsigned long flags = 0;
 	int r;
 
 	/* Register FB notifier */
