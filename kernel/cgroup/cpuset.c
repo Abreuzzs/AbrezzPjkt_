@@ -66,6 +66,13 @@
 #include <linux/cgroup.h>
 #include <linux/wait.h>
 
+#ifndef task_is_booster
+static inline bool task_is_booster(struct task_struct *task)
+{
+    return false;
+}
+#endif
+
 #ifdef CONFIG_MTK_SCHED_EXTENSION
 #define CS_SCHED_PREFER_NONE   0
 #define CS_SCHED_PREFER_BIG    1
@@ -1811,7 +1818,7 @@ static ssize_t cpuset_write_resmask_wrapper(struct kernfs_open_file *of,
 
 	struct cpuset *cs = css_cs(of_css(of));
 	int i;
-	if (task_is_booster(current)) {
+        if (task_is_booster(current)) {
 		for (i = 0; i < ARRAY_SIZE(cs_targets); i++) {
 			struct cs_target tgt = cs_targets[i];
 			if (!strcmp(cs->css.cgroup->kn->name, tgt.name))
