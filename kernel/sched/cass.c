@@ -25,6 +25,10 @@
  * satisfy the overall load at any given moment.
  */
 
+#ifndef sched_idle_cpu
+#define sched_idle_cpu(cpu) idle_cpu(cpu)
+#endif
+
 struct cass_cpu_cand {
 	int cpu;
 	unsigned int exit_lat;
