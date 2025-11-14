@@ -92,7 +92,10 @@ include/config
 include/generated
 include/ksym
 arch/*/include/generated
-
+clang/
+anykernel/
+run.sh
+KernelSU/
 # stgit generated dirs
 patches-*
 
