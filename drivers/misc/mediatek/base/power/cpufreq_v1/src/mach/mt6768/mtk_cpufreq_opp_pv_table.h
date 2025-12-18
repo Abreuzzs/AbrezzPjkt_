@@ -413,7 +413,7 @@ static unsigned int FY_G75Tbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	/* Freq, Vproc, post_div, clk_div */
 
 	/* L */
-	{ 2100, 81, 1, 1 },
+	{ 2000, 93, 1, 1 },
 	{ 1800, 69, 2, 1 },
 	{ 1625, 63, 2, 1 },
 	{ 1450, 61, 2, 1 },
@@ -433,9 +433,9 @@ static unsigned int FY_G75Tbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
     /* B */
-	{ 2200, 94, 1, 1 },
-	{ 2100, 92, 1, 1 },
-	{ 1900, 90, 1, 1 },
+	{ 2066, 94, 1, 1 },
+	{ 2000, 92, 1, 1 },
+	{ 1866, 90, 1, 1 },
 	{ 1850, 88, 1, 1 },
 	{ 1800, 85, 1, 1 },
 	{ 1710, 80, 1, 1 },
