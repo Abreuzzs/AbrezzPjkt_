@@ -197,7 +197,7 @@ static ssize_t rawbulk_attr_show(struct device *dev,
 #endif
 	}
 
-	if ((n == _MAX_TID) || (fn == NULL))
+	if (n == _MAX_TID)
 		return 0;
 
 	enab = check_enable_state(fn);
