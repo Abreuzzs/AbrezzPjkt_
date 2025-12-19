@@ -1632,7 +1632,7 @@ struct upower_tbl upower_tbl_cluster_b_G75 = {
 			.lkg_pwr = {0, 0, 0, 0, 0, 0} },
 		{.cap = 941, .volt = 103125, .dyn_pwr = 0,
 			.lkg_pwr = {0, 0, 0, 0, 0, 0} },
-		{.cap = 963, .volt = 175000, .dyn_pwr = 0,
+		{.cap = 963, .volt = 107500, .dyn_pwr = 0,
 			.lkg_pwr = {0, 0, 0, 0, 0, 0} },
 		{.cap = 984, .volt = 108750, .dyn_pwr = 0,
 			.lkg_pwr = {0, 0, 0, 0, 0, 0} },
