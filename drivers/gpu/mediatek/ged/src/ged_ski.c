@@ -203,7 +203,7 @@ ssize_t gpu_tmu_show(struct kobject *kobj,
 {
 	int temperature;
 
-	temperature = mt_gpufreq_get_gpu_temp();
+	temperature = 40;
 
 	return scnprintf(buf, PAGE_SIZE, "%d\n", temperature);
 }
