@@ -1076,12 +1076,12 @@ static struct mt_cpu_freq_method opp_tbl_method_CCI_PRO[] = {
 static struct mt_cpu_freq_method opp_tbl_method_LL_G75[] = {
 	/* POS,	CLK */
 	FP(1,	1),
+	FP(1,	1),
 	FP(2,	1),
 	FP(2,	1),
 	FP(2,	1),
 	FP(2,	1),
-	FP(2,	1),
-	FP(2,	1),
+	FP(1,	1),
 	FP(2,	1),
 	FP(2,	1),
 	FP(2,	1),
