@@ -10,16 +10,6 @@ jobs:
     permissions:
       contents: write
 
-    steps:
-      # Langkah 1: Checkout Kode Sumber (DIPERBAIKI)
-      - name: Checkout Kernel Source
-        uses: actions/checkout@v4
-        with:
-          ref: Master
-          fetch-depth: 0    # Mengambil seluruh history (mencegah error reference)
-          clean: true       # Memaksa bersih-bersih sebelum checkout
-          persist-credentials: false # PENTING: Mencegah error "auth placeholder"
-          submodules: true         # Mengambil submodule jika ada
 
       # Langkah 2: Install Dependensi
       - name: Install Dependencies
