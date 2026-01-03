@@ -286,7 +286,6 @@ config MACH_MT6768
 	select GENERIC_TIME
 	select GENERIC_CLOCKEVENTS
 	select ARCH_HAS_CPUFREQ
-        select SW_SYNC64
 	select ARM_AMBA
 	select ARM_DSU_PMU if ARM64 && PERF_EVENTS
 	select CPU_V7

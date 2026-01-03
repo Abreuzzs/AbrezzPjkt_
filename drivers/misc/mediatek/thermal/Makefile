@@ -57,7 +57,7 @@ obj-y += mtk_cooler_shutdown.o
 ifeq ($(CONFIG_MTK_LEDS), y)
     # setMaxbrightness() defined in mediatek/kernel/drivers/leds/leds_drv.c only built when CONFIG_MTK_LEDS is set
     # C3T code for HQ-223914 by liunianliang at 2022/08/03 start
-    # obj-y += mtk_cooler_backlight_cus.o
+    obj-y += mtk_cooler_backlight_cus.o
     # C3T code for HQ-223914 by liunianliang at 2022/08/03 end
 endif
 obj-y += mtk_cooler_kshutdown.o
