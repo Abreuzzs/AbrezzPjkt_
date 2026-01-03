@@ -20,7 +20,7 @@
 
 
 #define MAX_CORE (8)
-#define MAX_FREQ (22000000)
+#define MAX_FREQ (20000000)
 #define TARGET_CORE (-1)
 #define TARGET_FREQ (1183000)
 
