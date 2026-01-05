@@ -117,6 +117,9 @@ static int cass_best_cpu(struct task_struct *p, int prev_cpu, bool sync)
 		struct cass_cpu_cand *curr = &cands[cidx];
 		struct cpuidle_state *idle_state;
 
+                if (is_reserved(cpu))
+			continue;
+
 		/*
 		 * Check if this CPU is idle. For sync wakes, always treat the
 		 * current CPU as idle.
